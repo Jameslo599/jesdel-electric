@@ -1190,7 +1190,9 @@
   #cta-51 {
     padding: var(--sectionPadding);
     position: relative;
-
+    .cs-topper {
+      color: var(--primaryLight);
+    }
     .cs-container {
       width: 100%;
       max-width: calc(1280 / 16 * 1rem);
