@@ -77,6 +77,8 @@
       height: calc(80 / 16 * 1rem);
       position: absolute;
       top: calc(-40 / 16 * 1rem);
+      filter: brightness(0) saturate(100%) invert(76%) sepia(46%) saturate(701%)
+        hue-rotate(338deg) brightness(100%) contrast(103%);
     }
 
     .cs-item-text {

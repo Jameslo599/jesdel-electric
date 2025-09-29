@@ -1,142 +1,344 @@
 <!-- ============================================ -->
+<!--                Call To Action                -->
+<!-- ============================================ -->
+
+<section id="cta-2293">
+  <div class="cs-container">
+    <div class="cs-content">
+      <div class="cs-flex">
+        <div class="cs-topper">Contact US</div>
+        <h2 class="cs-title">Get It Done With Us Today</h2>
+        <p class="cs-text">
+          Let us help transform your home’s exterior into a stunning space.
+          Contact us today for a free consultation and detailed estimate
+          tailored to your project’s unique needs.
+        </p>
+      </div>
+      <a href="" class="cs-button-solid">GET A FREE QUOTE</a>
+    </div>
+    <div class="cs-card-group">
+      <li class="cs-item">
+        <picture class="cs-wrapper">
+          <img
+            class="cs-icon"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/phone-yellow.svg"
+            alt="logo"
+            width="32"
+            height="32"
+          />
+        </picture>
+        <div class="cs-info">
+          <span class="cs-header">Contact</span>
+          <a class="cs-link" href="tel:{{ client.phoneForTel }}"
+            >{{ client.phoneFormatted }}</a
+          >
+          <a class="cs-link" href="mailto:{{ client.email }}"
+            >{{ client.email }}</a
+          >
+        </div>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-wrapper">
+          <img
+            class="cs-icon"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/pin-yellow.svg"
+            alt="logo"
+            width="32"
+            height="32"
+          />
+        </picture>
+        <div class="cs-info">
+          <span class="cs-header">Location</span>
+          <a
+            class="cs-link"
+            href="{{ client.address.mapLink }}"
+            target="_blank"
+            rel="noopener"
+            >{{ client.address.lineOne }}, <br />
+            {{ client.address.lineTwo }}, <br />
+            {{ client.address.city }}, {{ client.address.state }} {{
+            client.address.zip }}</a
+          >
+        </div>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-wrapper">
+          <img
+            class="cs-icon"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/clock-yellow.svg"
+            alt="logo"
+            width="32"
+            height="32"
+          />
+        </picture>
+        <div class="cs-info">
+          <span class="cs-header">Working Hours</span>
+          <span class="cs-link">Monday - Friday: Open 24 hours</span>
+          <span class="cs-link">Saturday: 8:00 AM - 4:00 PM</span>
+          <span class="cs-link">Sunday: Closed</span>
+        </div>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-wrapper">
+          <img
+            class="cs-icon"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/social-yellow.svg"
+            alt="logo"
+            width="32"
+            height="32"
+          />
+        </picture>
+        <div class="cs-info">
+          <span class="cs-header">Social Media</span>
+          <div class="cs-social-links">
+            <a
+              class="cs-link"
+              href="https://www.facebook.com/p/Jesdel-Electric-LLC-100054672044726/"
+            >
+              Facebook
+              <img
+                class="cs-button-arrow"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg"
+                decoding="async"
+                alt="arrow"
+                width="20"
+                height="20"
+                aria-hidden="true"
+              />
+            </a>
+            <a class="cs-link" href="https://share.google/g5DdqT8U25QJvDAUn">
+              Google
+              <img
+                class="cs-button-arrow"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg"
+                decoding="async"
+                alt="arrow"
+                width="20"
+                height="20"
+                aria-hidden="true"
+              />
+            </a>
+          </div>
+        </div>
+      </li>
+    </div>
+  </div>
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source
+      media="(max-width: 600px)"
+      srcset="
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/roof.png
+      "
+    />
+    <!--Tablet and above Image-->
+    <source
+      media="(min-width: 601px)"
+      srcset="
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/roof.png
+      "
+    />
+    <img
+      loading="lazy"
+      decoding="async"
+      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/roof.png"
+      alt="roof"
+      width="690"
+      height="177"
+    />
+  </picture>
+</section>
+
+<!-- ============================================ -->
 <!--                   Footer                     -->
 <!-- ============================================ -->
 
-<footer id="cs-footer-275">
+<footer id="cs-footer-2293">
   <div class="cs-container">
-    <!-- Logo Group -->
-    <div class="cs-logo-group">
-      <a aria-label="go back to home" class="cs-logo" href="/">
-        <img
-          class="cs-logo-img"
-          aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          src="/assets/svgs/jesdel_logo.svg"
-          alt="logo"
-          width="240"
-          height="32"
-        />
-      </a>
-      <p class="cs-text">TECL: #34114</p>
-      <div class="cs-social">
-        <a
-          class="cs-social-link"
-          aria-label="visit google profile"
-          href="{{ client.address.mapLink }}"
-          target="_blank"
-          rel="noopener"
-        >
+    <div class="cs-top">
+      <!-- Logo Group -->
+      <div class="cs-logo-group">
+        <a class="cs-logo" aria-label="go back to home" href="#">
           <img
-            class="cs-social-img"
+            class="cs-logo-img"
             aria-hidden="true"
             loading="lazy"
             decoding="async"
-            src="/assets/svgs/google.svg"
-            alt="google"
-            width="11"
-            height="11"
+            src="/assets/svgs/jesdel_logo.svg"
+            alt="logo"
+            width="260"
+            height="48"
           />
         </a>
-        <a
-          class="cs-social-link"
-          aria-label="visit facebook profile"
-          href="{{ client.socials.facebook }}"
-          target="_blank"
-          rel="noopener"
-        >
-          <img
-            class="cs-social-img"
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="/assets/svgs/facebook.svg"
-            alt="facebook"
-            width="6"
-            height="11"
-          />
-        </a>
+
+        <p class="cs-text">
+          Trusted by homeowners and businesses alike, Jesdel Electric is your
+          go-to Fort Worth electrician for quality craftsmanship and exceptional
+          customer care. <br /><br />
+          TECL: #34114 <br />
+          Regulated by The Texas Department of Licensing and Regulation, <br />
+          P.O. Box 12157, Austin, Texas 78711 <br />
+          Phone:
+          <a class="cs-link" href="tel:1-800-803-9202">1-800-803-9202</a>
+          <a class="cs-link" href="tel:512-563-6599">512-563-6599</a>
+          <br />
+          Website:
+          <a
+            class="cs-link"
+            href="tdlr.texas.gov"
+            target="_blank"
+            rel="noopener"
+            >tdlr.texas.gov</a
+          >
+        </p>
+      </div>
+      <div class="cs-logo-group">
+        <ul class="cs-payment-ul">
+          <li class="cs-li cs-header cs-payment-header">
+            <span class="cs-link">Preferred Payments</span>
+          </li>
+          <li class="cs-payment-li">
+            <img
+              src="/assets/payments/cash.svg"
+              alt="united states dollar"
+              class="cs-payment-img"
+            />
+          </li>
+          <li class="cs-payment-li">
+            <img
+              src="/assets/payments/check.svg"
+              alt="bank check"
+              class="cs-payment-img"
+            />
+          </li>
+          <li class="cs-payment-li">
+            <img
+              src="/assets/payments/bitcoin.svg"
+              alt="bitcoin"
+              class="cs-payment-img"
+            />
+          </li>
+          <li class="cs-payment-li">
+            <img
+              src="/assets/payments/zelle.svg"
+              alt="zelle"
+              class="cs-payment-img"
+            />
+          </li>
+          <li class="cs-payment-li">
+            <img
+              src="/assets/payments/cashapp.svg"
+              alt="cashapp"
+              class="cs-payment-img"
+            />
+          </li>
+          <li class="cs-payment-li">
+            <img
+              src="/assets/payments/paypal.svg"
+              alt="paypal"
+              class="cs-payment-img"
+            />
+          </li>
+          <li class="cs-payment-li">
+            <img
+              src="/assets/payments/venmo.svg"
+              alt="venmo"
+              class="cs-payment-img"
+            />
+          </li>
+        </ul>
+        <ul class="cs-credit-ul">
+          <li class="cs-li cs-header">
+            <span class="cs-link">Accepted Payments</span>
+          </li>
+          <li class="cs-li credit-cards">
+            <img src="/assets/payments/visa.svg" alt="visa" />
+            <img src="/assets/payments/mastercard.svg" alt="mastercard" />
+            <img src="/assets/payments/discover-card.svg" alt="discover" />
+            <img src="/assets/payments/amex.svg" alt="american express" />
+          </li>
+        </ul>
+      </div>
+      <!--Sitemap-->
+      <div class="cs-logo-group">
+        <ul class="cs-ul">
+          <li class="cs-li cs-header">
+            <span class="cs-link">Sitemap</span>
+          </li>
+          <li class="cs-li">
+            <a class="cs-link" href="/">Home</a>
+          </li>
+          <li class="cs-li">
+            <a class="cs-link" href="/about/">About</a>
+          </li>
+          <li class="cs-li">
+            <a class="cs-link" href="/gallery/">Gallery</a>
+          </li>
+          <li class="cs-li">
+            <a class="cs-link" href="/reviews/">Reviews</a>
+          </li>
+          <li class="cs-li">
+            <a class="cs-link" href="/contact/">Contact</a>
+          </li>
+        </ul>
+        <ul class="cs-ul">
+          <li class="cs-li cs-header">
+            <span class="cs-link">Services</span>
+          </li>
+          <li class="cs-li">
+            <a href="/residential-services/" class="cs-link"
+              >Residential Services</a
+            >
+          </li>
+          <li class="cs-li">
+            <a href="/commercial-services/" class="cs-link"
+              >Commercial Services</a
+            >
+          </li>
+          <li class="cs-li">
+            <a href="/service-upgrade-repair/" class="cs-link"
+              >Service Upgrade & Repair</a
+            >
+          </li>
+          <li class="cs-li">
+            <a href="/lighting-design-installation/" class="cs-link"
+              >Lighting Design</a
+            >
+          </li>
+          <li class="cs-li">
+            <a href="/emergency-services/" class="cs-link"
+              >Emergency Services</a
+            >
+          </li>
+          <li class="cs-li">
+            <a href="/rewiring-services/" class="cs-link">Rewiring Services</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <!-- Links -->
-    <ul class="cs-nav">
-      <li class="cs-nav-li">
-        <span class="cs-header">Sitemap</span>
-      </li>
-      <li class="cs-nav-li">
-        <a class="cs-nav-link" href="/">Home</a>
-      </li>
-      <li class="cs-nav-li">
-        <a class="cs-nav-link" href="/about/">About</a>
-      </li>
-      <li class="cs-nav-li">
-        <a class="cs-nav-link" href="/gallery/">Gallery</a>
-      </li>
-      <li class="cs-nav-li">
-        <a class="cs-nav-link" href="/contact/">Contact</a>
-      </li>
-    </ul>
-    <ul class="cs-nav">
-      <li class="cs-nav-li">
-        <span class="cs-header">Services</span>
-      </li>
-      <li class="cs-nav-li">
-        <a href="/residential-services/" class="cs-nav-link"
-          >Residential Services</a
-        >
-      </li>
-      <li class="cs-nav-li">
-        <a href="/commercial-services/" class="cs-nav-link"
-          >Commercial Services</a
-        >
-      </li>
-      <li class="cs-nav-li">
-        <a href="/service-upgrade-repair/" class="cs-nav-link"
-          >Service Upgrade & Repair</a
-        >
-      </li>
-      <li class="cs-nav-li">
-        <a href="/lighting-design-installation/" class="cs-nav-link"
-          >Lighting Design & Installation</a
-        >
-      </li>
-      <li class="cs-nav-li">
-        <a href="/emergency-services/" class="cs-nav-link"
-          >Emergency Services</a
-        >
-      </li>
-      <li class="cs-nav-li">
-        <a href="/rewiring-services/" class="cs-nav-link">Rewiring Services</a>
-      </li>
-    </ul>
-    <!-- Contact Info -->
-    <ul class="cs-contact">
-      <li class="cs-nav-li">
-        <span class="cs-header">Contact</span>
-      </li>
-      <li class="cs-contact-li">
-        <a
-          class="cs-contact-link cs-address"
-          href="{{ client.address.mapLink }}"
-          target="_blank"
-          rel="noopener"
-        >
-          {{ client.address.lineOne }}, <br />
-          {{ client.address.lineTwo }}, <br />
-          {{ client.address.city }}, {{ client.address.state }} {{
-          client.address.zip }}
-        </a>
-      </li>
-      <li class="cs-contact-li">
-        <a class="cs-contact-link" href="tel:{{ client.phoneForTel }}"
-          >{{ client.phoneFormatted }}</a
-        >
-      </li>
-      <li class="cs-contact-li">
-        <a class="cs-contact-link" href="mailto:{{ client.email }}"
-          >{{ client.email }}</a
-        >
-      </li>
-    </ul>
+    <!--Bottom Copyright And Social-->
+    <div class="cs-bottom">
+      <span class="cs-copyright-group">
+        <span class="cs-copyright">© Copyright {% year %} -</span>
+        <a class="cs-link" href="#">Jesdel Electric</a>
+      </span>
+      <div class="cs-flex">
+        <a href="/terms-and-conditions/" class="cs-link">Terms & Conditions</a>
+        <div class="cs-divider" aria-hidden="true"></div>
+        <a href="/privacy-policy/" class="cs-link">Privacy Policy</a>
+      </div>
+    </div>
   </div>
 </footer>
