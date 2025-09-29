@@ -70,7 +70,13 @@ height: 640 }) | avif %}"/> {% endblock %} {% block body %}
           here to provide fast, reliable, and affordable solutions.
         </p>
       </div>
-      <form id="cs-form-265" name="Contact Form" method="post">
+      <form
+        id="cs-form-265"
+        name="Contact Form"
+        method="post"
+        data-netlify="true"
+        data-netlify-recaptcha="true"
+      >
         <label>
           Name
           <input
@@ -119,6 +125,7 @@ height: 640 }) | avif %}"/> {% endblock %} {% block body %}
             placeholder="Write message..."
           ></textarea>
         </label>
+        <div class="field" data-netlify-recaptcha="true"></div>
         <button class="cs-button-solid cs-submit" type="submit">
           Submit Message
         </button>
