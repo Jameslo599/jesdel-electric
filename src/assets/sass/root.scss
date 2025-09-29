@@ -64,9 +64,12 @@
     text-align: inherit;
     letter-spacing: 0.1em;
     font-weight: 700;
-    color: var(--primaryLight);
+    color: var(--primary);
     margin-bottom: 0.25rem;
     display: block;
+  }
+  .cs-topper-darkbg {
+    color: var(--primaryLight);
   }
 
   .cs-title {
@@ -339,6 +342,9 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   body.dark-mode {
+    .cs-topper {
+      color: var(--primaryLight);
+    }
     #dark-mode-toggle {
       .cs-sun {
         opacity: 1;
@@ -1190,7 +1196,7 @@
     padding: var(--sectionPadding);
     position: relative;
     .cs-topper {
-      color: var(--primaryLight);
+      color: var(--primary);
     }
     .cs-container {
       width: 100%;
