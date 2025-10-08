@@ -25,7 +25,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
 <link rel="stylesheet" href="/assets/css/local.css" />
 {% endif %}
 
-<!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
+<!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customizing  -->
 <!-- Uncomment the code below to enable Structured Data, and test it when you deploy to Netlify - https://developers.google.com/search/docs/appearance/structured-data -->
 <!-- {% include "components/home-schema.html" %} -->
 {% endblock %} {% block body %}
@@ -37,7 +37,6 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
 <section id="hero-1785">
   <div class="cs-container">
     <div class="cs-content">
-      <span class="cs-topper cs-topper-darkbg">Jesus Delacruz Presents</span>
       <h1 class="cs-title">JESDEL ELECTRIC</h1>
       <p class="cs-text">
         Reliable Electrical Solutions, Done Right the First Time, Every Time.
@@ -48,9 +47,9 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
     </div>
   </div>
 
-  <!-- Background Image -->
+  <!-- Background Image
   <picture class="cs-background">
-    <!--Mobile Image-->
+    Mobile Image
     <source media="(max-width: 600px)" srcset="{% getUrl
     "/assets/images/lighting.webp" | resize({ width: 640, height: 1490 }) | avif
     %}" type="image/avif"> <source media="(max-width: 600px)" srcset="{% getUrl
@@ -58,7 +57,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
     %}" type="image/webp"> <source media="(max-width: 600px)" srcset="{% getUrl
     "/assets/images/lighting.webp" | resize({ width: 640, height: 1490 }) | jpeg
     %}" type="image/jpeg">
-    <!--Tablet Image-->
+    Tablet Image
     <source media="(max-width: 1024px)" srcset="{% getUrl
     "/assets/images/lighting.webp" | resize({ width: 2048, height: 1922 }) |
     avif %}" type="image/avif"> <source media="(max-width: 1024px)" srcset="{%
@@ -66,7 +65,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
     }) | webp %}" type="image/webp"> <source media="(max-width: 1024px)"
     srcset="{% getUrl "/assets/images/lighting.webp" | resize({ width: 2048,
     height: 1922 }) | jpeg %}" type="image/jpeg">
-    <!--Large Tablet Image-->
+    Large Tablet Image
     <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{%
     getUrl "/assets/images/lighting.webp" | resize({ width: 2048, height: 1922
     }) | avif %}" type="image/avif"> <source media="(min-width: 1024px) and
@@ -75,7 +74,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
     media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl
     "/assets/images/lighting.webp" | resize({ width: 2048, height: 1922 }) |
     jpeg %}" type="image/jpeg">
-    <!--Desktop Image-->
+    Desktop Image
     <source media="(min-width: 1300px)" srcset="{% getUrl
     "/assets/images/lighting.webp" | resize({ width: 1, height: 1 }) | avif %}"
     type="image/avif"> <source media="(min-width: 1300px)" srcset="{% getUrl
@@ -85,7 +84,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
     type="image/jpeg"> <img src="{% getUrl "/assets/images/lighting.webp" |
     resize({ width: 1, height: 1 }) | webp %}" alt="kitchen" width="1"
     height="1" loading="eager" decoding="async">
-  </picture>
+  </picture> -->
 
   <img
     class="cs-graphic"
@@ -360,6 +359,82 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
         </picture>
       </li>
     </ul>
+    <ul class="cs-card-group">
+      <li class="cs-item fade-in">
+        <div class="cs-flex">
+          <picture class="cs-wrapper">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/gifs/generator.gif"
+              alt="icon"
+              width="70"
+              height="70"
+            />
+          </picture>
+          <h3 class="cs-h3">Whole Home Generators</h3>
+          <p class="cs-item-text">
+            Our designers can help you discover what is possible as we walk you
+            through the design process for your home or business. We will make
+            your project shine!
+          </p>
+          <a href="/contact/" class="cs-link">GET QUOTE</a>
+        </div>
+        <picture class="cs-picture">
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/generator.webp" %}" /> <source media="(min-width:
+          601px)" srcset="{% getUrl "/assets/images/generator.webp" %}" />
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/generator.webp"
+            alt="leaf"
+            width="345"
+            height="428"
+          />
+        </picture>
+      </li>
+      <li class="cs-item fade-in">
+        <div class="cs-flex">
+          <picture class="cs-wrapper">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/gifs/electric-charger.gif"
+              alt="icon"
+              width="70"
+              height="70"
+            />
+          </picture>
+          <h3 class="cs-h3">EV Chargers</h3>
+          <p class="cs-item-text">
+            When the unexpected happens, we are on call 24/7 to help you through
+            an already difficult situation. You can count on us to be here and
+            give you immediate assistance when you need it most!
+          </p>
+          <a href="/contact/" class="cs-link">GET QUOTE</a>
+        </div>
+        <picture class="cs-picture">
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/ev.webp" %}" /> <source media="(min-width: 601px)"
+          srcset="{% getUrl "/assets/images/ev.webp" %}" />
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/ev.webp"
+            alt="leaf"
+            width="345"
+            height="428"
+          />
+        </picture>
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -455,12 +530,27 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
       </p>
       <div class="cs-quote">
         <span class="cs-quote-text">
-          As a native Texan, I treat every home and business I work on as if it
-          were my own. My promise is simple—honest work, fair prices, and the
-          peace of mind that your electrical system is safe and reliable.
+          My name is Alberto Delacruz I was raised in a humble migrant family. I
+          grew up through a lot of struggles. When I was attending High School
+          due to the hardship I had to work two part time jobs in the fast-food
+          industry to have enough money to pay for my expenses.<br /><br />
+          In 2004 I graduated from High School. I was interested in becoming an
+          auto repair technician and this motivated me to enroll in college.
+          When I was taking several automotive courses my circumstances in life
+          changed again and this made me revaluate my goals and career. In 2006
+          I attended a technical college close to home to continue with my
+          education in the Electrical Technology industry, all this while
+          working full time in an electrical company.<br /><br />
+          For more than 8 years I worked as a journeymen electrician in the
+          electrical construction industry, some of the projects included in my
+          background are schools, hospitals, data centers, apartment complex,
+          residential homes and as an electrical service technician.In 2015 I
+          achieved my master electrical license, and later in 2019 I obtained my
+          electrical contractor license and became to own Jesdel Electric
+          LLC.<br /><br />
         </span>
-        <span class="cs-name">Jesus Delacruz</span>
-        <span class="cs-job">CEO-Founder</span>
+        <span class="cs-name">Alberto Delacruz</span>
+        <span class="cs-job">Owner</span>
         <img
           class="cs-quote-icon"
           loading="lazy"
