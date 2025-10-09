@@ -68,7 +68,20 @@
     <script defer src="/assets/js/fade.js"></script>
 
     {% block head %}{% endblock %}
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NXQ35L3W65"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
+      gtag('config', 'G-NXQ35L3W65');
+    </script>
     <title>{{ title }}</title>
   </head>
   <body>
