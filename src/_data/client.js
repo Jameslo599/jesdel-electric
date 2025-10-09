@@ -16,7 +16,7 @@ module.exports = {
     facebook: 'https://www.facebook.com/p/Jesdel-Electric-LLC-100054672044726/',
   },
   //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-  domain: 'https://www.jesdelelectric.com',
+  domain: 'https://www.jesdelectric.com',
   // Passing the isProduction variable for use in HTML templates
   isProduction: process.env.ELEVENTY_ENV === 'PROD',
 };
